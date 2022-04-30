@@ -1,92 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Bootstrap Pratica</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/style.css">
+    <title>Admin Site</title>
 </head>
-
+<!-- SIDE BAR -->
 
 <body>
+    <section id="sidebar">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <a href="#" class="brand"><i class='bx bxs-smile icon'></i> admin site</a>
+        <ul class="side-menu">
+            <li><a href="#"><i class="bx bxs-dashboard icon"> </i> DashBoard</a></li>
+            <li class="divider">Main</li>
+            <li>
+                <a href="#"><i class="bx bxs-dashboard icon"></i>Elements <i class="bx bx-chevern icon right"></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">Alertas</a></li>
+                    <li><a href="#">Controles</a></li>
+                    <li><a href="#">Acesso</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Configurações do Sistema</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="bx bxs-chart icon"></i>charts</a></li>
+            <li><a href="#"><i class="bx bxs-widget icon"></i>Widgets</a></li>
+            <li class="divider">Table and Forms</li>
+            <li><a href="#"><i class="bx bx-tables icon"> </i> Tables</a></li>
+            <li>
+                <a href="#"><i class="bx bxs-notepad icon"></i>Forms <i class="bx bx-chevern icon right"></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">Basic </a></li>
+                    <li><a href="#">Basic </a></li>
+                    <li><a href="#">Basic </a></li>
+                    <li><a href="#">Basic </a></li>
+                    <li><a href="#">Basic </a></li>
+                    <li><a href="#">Basic </a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="ad">
+            <div class="wreapper">
+                <a href="#" class="btn-upgrade"> Upgrade! </a>
+                <p>become a <span>PRO</span> Member and Enjoy <span>  </span></p>
+            </div>
+        </div>
 
+
+
+
+
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
-<script src="./js/bootstrap.min.js"></script>
-
-
-
-<main>
-    <header>
-        <div id="page-inicial" class="page-header">
-
-            <h1>DashBorard - Projeto em Construção</h1> <small>Trabalho foi iniciado no dia 29/04/2022</small>
-            <ul class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#"> Profile</a></li>
-                <li role="presentation"><a href="#">Config</a></li>
-            </ul>
-        </div>
-
-
-    </header>
-    <main>
-        <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">@</span>
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-        </div>
-
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-            <span class="input-group-addon" id="basic-addon2">@example.com</span>
-        </div>
-
-        <div class="input-group">
-            <span class="input-group-addon">$</span>
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-            <span class="input-group-addon">.00</span>
-        </div>
-
-        <label for="basic-url">Your vanity URL</label>
-        <div class="input-group">
-            <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
-            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-        </div>
-        <nav aria-label="Page navigation">
-            <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </main>
-    <footer></footer>
-
-
-
-</main>
 
 </html>
