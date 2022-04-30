@@ -56,7 +56,7 @@ section {
 }
 
 #sidebar .brand {
-    font-size: 24px;
+    font-size: 19px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,4 +86,15 @@ section {
 
 #sidebar .side-menu a:hover {
     background-color: var(--verde);
+}
+
+#sidebar .side-dropdown {
+    display: grid;
+    align-items: center;
+}
+
+#sidebar .elementos {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
 }
