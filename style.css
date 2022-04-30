@@ -1,0 +1,89 @@
+:root {
+    --cinza: #f1f8f6;
+    --cinza-escuro: #8d8d8d;
+    --branco: #fff;
+    --escuro: #000;
+    --verde: #b1d43a;
+    --azul: #1885f1;
+    --azul-claro: #8cbeef;
+    --azul-escuro: #0c0c0c;
+    --vermelho: #fc3856;
+}
+
+body {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--cinza);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.sidebar {
+    font-size: 45px;
+    color: brown;
+}
+
+.side-dropdown {
+    font: bold;
+    margin: 10px;
+    text-align: start;
+}
+
+.divider {
+    font-size: 25px;
+}
+
+section {
+    text-align: start;
+}
+
+
+/* SIDE BAR */
+
+#sidebar {
+    position: fixed;
+    width: 260px;
+    background: var(--branco);
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#sidebar .brand {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--azul-claro);
+}
+
+#sidebar .icon {
+    min-width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar .side-menu {
+    margin: 36px 0;
+    padding: 0 20px;
+}
+
+#sidebar .side-menu a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--escuro);
+    padding: 12px 16px 12px 0;
+    transition: all .3s ease;
+}
+
+#sidebar .side-menu a:hover {
+    background-color: var(--verde);
+}

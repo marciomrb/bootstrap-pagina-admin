@@ -1,0 +1,19 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Users\\Matheus Henrique\\Downloads\\js"
+		},
+		{
+			"path": "..\\Users\\Matheus Henrique\\Downloads\\css"
+		},
+		{
+			"path": "..\\Users\\Matheus Henrique\\Downloads\\fonts"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "admin-dashboard-github"
+    }
+}
