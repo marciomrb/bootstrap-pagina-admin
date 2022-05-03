@@ -11,7 +11,7 @@
 }
 
 body {
-    color: white;
+    color: var(--cinza);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--cinza);
 }
@@ -22,25 +22,6 @@ a {
 
 li {
     list-style: none;
-}
-
-.sidebar {
-    font-size: 45px;
-    color: brown;
-}
-
-.side-dropdown {
-    font: bold;
-    margin: 10px;
-    text-align: start;
-}
-
-.divider {
-    font-size: 25px;
-}
-
-section {
-    text-align: start;
 }
 
 
@@ -60,7 +41,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 64px;
     color: var(--azul-claro);
+    font-weight: 700;
 }
 
 #sidebar .icon {
@@ -82,8 +65,81 @@ section {
     color: var(--escuro);
     padding: 12px 16px 12px 0;
     transition: all .3s ease;
+    border-radius: 10px;
+    margin: 4px 0;
+    grid: 6px;
 }
 
-#sidebar .side-menu a:hover {
-    background-color: var(--verde);
+#sidebar .side-menu>li>a:hover {
+    background: var(--cinza);
+}
+
+#sidebar .side-menu>li>a.active,
+#sidebar .side-menu>li>a.active:hover {
+    background: var(--azul);
+    color: var(--branco);
+}
+
+#sidebar .divider {
+    margin-top: 24px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--escuro-cinza);
+    ;
+}
+
+#sidebar .side-dropdown {
+    padding-left: 48px;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 15s ease;
+}
+
+#sidebar .side-dropdown.show {
+    max-height: 1000px;
+}
+
+#sidebar .side-dropdown a:hover {
+    color: var(--azul);
+}
+
+#sidebar .ads {
+    width: 100%;
+    padding: 20px;
+}
+
+#sidebar .ads .wrapper {
+    flex-direction: column;
+    background: var(--cinza);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#sidebar .btn-upgrade {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    color: var(--branco);
+    background: var(--azul);
+    transition: all .3s ease;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+#sidebar .btn-upgrade :hover {
+    background: var(--azul-escuro);
+}
+
+#sidebar .ads .wrapper {
+    font-size: 12px;
+    color: var(--escuro-cinza);
+    text-align: center;
+}
+
+#sidebar .ads .wrapper p span {
+    font-weight: 700;
 }
