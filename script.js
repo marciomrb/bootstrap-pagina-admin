@@ -1,15 +1,16 @@
-const alldropdown = document.querySelectorAll("#sidebar .side-dropdown");
-
-alldropdown.forEach(iten => {
-    const a = item.parentElement.querySelector("a:first-child");
-    a.addEventListener("click", function(e) {
-        e.preventDefault();
-        this.classList.toogle("active");
-        item.classList.toogle("show");
+var button = document.querySelectorAll('a.dropdown-item');
 
 
-    })
-
-
-
-})
+button.forEach(function(button) {
+    button.addEventListener('click', function() {
+        var dropdown = this.nextElementSibling;
+        if (dropdown.classList.contains('show')) {
+            dropdown.classList.remove('show');
+            dropdown.classList.remove('active');
+        }
+        else {
+            dropdown.classList.add('show');
+            dropdown.classList.add('active');
+        }
+    });
+});
